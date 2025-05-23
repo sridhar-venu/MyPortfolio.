@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(./img/abt-background.jpg);
+  color: white;
+  font-family: "Rubik", sans-serif;
+}
+
+.header_s1 {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.header_s1 a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 5px;
+}
+
+.header_s1 a:hover {
+  transform: scale(1.20);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  color: #66F4EA;
+  
+  transition: all 0.2s ease;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: auto;
+  gap: 60px;
+      margin-top: 5%;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.contact-info h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #ffffff;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.info-item i {
+  color: #fa5a28;
+  margin-right: 12px;
+  font-size: 18px;
+}
+
+.contact-form {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.name-fields {
+  display: flex;
+  gap: 15px;
+}
+
+.name-fields div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.contact-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.contact-form button {
+  background-color: #fa5a28;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  border-radius: 20px;
+  width: 100px;
+  align-self: flex-start;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #d94e22;
+}
+
+@media (max-width: 768px) {
+  .header_s1 a {
+    display: none;
+  }
+
+  .header_s1 h1 {
+    font-size: 24px;
+  }
+   .contact-container {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    margin-left: 0;
+    width: 90%;
+    text-align: center;
+  }
+}
